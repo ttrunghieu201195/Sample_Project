@@ -1,0 +1,12 @@
+{
+    "name": "Hieu's Extension",
+    "description": "Build an sample Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://yte-baclieu.vnpthis.vn/web_his/khambenhngoaitru"],
+          "js": ["jquery.min.js","content-script.js"]
+        }
+      ]
+  }
