@@ -1,0 +1,90 @@
+[
+	{
+		"STT": 1,
+		"HOAT_CHAT_1": "Aceclofenac",
+		"HOAT_CHAT_2": "Ketorolac",
+		"CO_CHE": "Hiệp    đồng    tác dụng    kích    ứng đường tiêu hóa",
+		"HAU_QUA": "Tăng  nguy  cơ  xuất huyết      tiêu      hóa nghiêm   trọng   (sử dụng     đồng     thời ketorolac     với     1 NSAID   khác   làm tăng  nguy  cơ  xuất huyết tiêu hóa gấp 5 lần so với phối hợp\r\n2 NSAID khác)",
+		"XU_TRI": "Chống chỉ định phối hợp. Cần đặc biệt lưu ý nguy cơ tương tác trong trường hợp giảm đau hậu phẫu."
+	},
+	{
+		"STT": 11,
+		"HOAT_CHAT_1": "Aceclofenac",
+		"HOAT_CHAT_2": "Tamoxifen",
+		"CO_CHE": "Hiệp    đồng    tác dụng    kích    ứng đường tiêu hóa",
+		"HAU_QUA": "Tăng  nguy  cơ  xuất huyết      tiêu      hóa nghiêm   trọng   (sử dụng     đồng     thời ketorolac     với     1 NSAID   khác   làm tăng  nguy  cơ  xuất huyết tiêu hóa gấp 5 lần so với phối hợp\r\n2 NSAID khác)",
+		"XU_TRI": "Chống chỉ định phối hợp. Cần đặc biệt lưu ý nguy cơ tương tác trong trường hợp giảm đau hậu phẫu."
+	},
+	{
+		"STT": 2,
+		"HOAT_CHAT_1": "Acenocoumar ol",
+		"HOAT_CHAT_2": "Tamoxifen",
+		"CO_CHE": "Tamoxifen ức chế CYP2C9        làm giảm  chuyển  hóa của acenocoumarol",
+		"HAU_QUA": "Tăng  nguy  cơ  xuất huyết",
+		"XU_TRI": "1. Chống chỉ định phối hợp ở bệnh nhân sử dụng tamoxifen dự phòng tiên phát ung thư vú.\r\n2.  Ở  bệnh  nhân  ung  thư  vú, nên cân nhắc sử dụng heparin trọng   lượng   phân   tử   thấp (LMWH)    hoặc    các    thuốc chống  đông  đường  uống  tác động  trực  tiếp  (DOAC)  thay thế  cho  warfarin  để  điều  trị thuyên tắc tĩnh mạch do huyết khối.  Trong  trường  hợp  bắt buộc    sử    dụng    đồng    thời tamoxifen  với  warfarin,  cần giảm 1/2 đến 2/3 liều warfarin và  theo  dõi  chặt  chẽ   bệnh\r\nnhân."
+	},
+	{
+		"STT": 3,
+		"HOAT_CHAT_1": "Acid mefenamic",
+		"HOAT_CHAT_2": "Ketorolac",
+		"CO_CHE": "Hiệp    đồng    tác dụng    kích    ứng đường tiêu hóa",
+		"HAU_QUA": "Tăng  nguy  cơ  xuất huyết      tiêu      hóa nghiêm   trọng   (sử dụng     đồng     thời ketorolac     với     1 NSAID   khác   làm tăng  nguy  cơ  xuất huyết tiêu hóa gấp 5 lần so với phối hợp\r\n2 NSAID khác)",
+		"XU_TRI": "Chống chỉ định phối hợp. Cần đặc biệt lưu ý nguy cơ tương tác trong trường hợp giảm đau hậu phẫu."
+	},
+	{
+		"STT": 4,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Ethinyl estradiol",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng ethinyl    estradiol tăng  lên  khi  phối hợp     với     acid tranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc  tránh  thai  chứa  ethinyl estradiol.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận                                trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	},
+	{
+		"STT": 5,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Estradiol valerat",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng estradiol    valerat tăng  lên  khi  phối hợp     với     acid tranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc tránh thai chứa estradiol valerat.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận                                trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	},
+	{
+		"STT": 6,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Estriol",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng estriol    tăng    lên khi  phối  hợp  với acid tranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc  tránh  thai  chứa  estriol.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận                                trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	},
+	{
+		"STT": 7,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Clormadino n",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng clormadinon  tăng lên  khi  phối  hợp với                 acid\r\ntranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc      tránh      thai      chứa clormadinon.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận                                trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	},
+	{
+		"STT": 8,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Desogestrel",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng desogestrel    tăng lên  khi  phối  hợp với                 acid\r\ntranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc      tránh      thai      chứa desogestrel.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	},
+	{
+		"STT": 9,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Dienogest",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng dienogest tăng lên khi  phối  hợp  với acid tranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc      tránh      thai      chứa dienogest.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	},
+	{
+		"STT": 10,
+		"HOAT_CHAT_1": "Acid tranexamic",
+		"HOAT_CHAT_2": "Drospirenon",
+		"CO_CHE": "Nguy    cơ    huyết khối  khi  sử  dụng drospirenon   tăng lên  khi  phối  hợp với                 acid\r\ntranexamic",
+		"HAU_QUA": "Tăng  nguy  cơ  biến cố huyết khối",
+		"XU_TRI": "1.  Chống  chỉ  định  sử  dụng acid tranexamic điều trị rong kinh ở bệnh nhân đang  dùng thuốc      tránh      thai      chứa drospirenon.\r\n2. Với các chỉ định khác của acid   tranexamic,   có   thể   sử dung ở người đang dùng thuốc tránh thai nhưng cần đặc biệt thận                                trọng.\r\nLưu ý các yếu tố tăng nguy cơ: béo phì, hút thuốc lá, đặc biệt ở người trên 35 tuổi."
+	}
+]
