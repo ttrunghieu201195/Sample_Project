@@ -9,10 +9,10 @@ let data=[{
     "data":"scd",
     "abc":"sdef"
 }]
-function jsUcfirst(string) 
-{
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+// function jsUcfirst(string) 
+// {
+//     return string.charAt(0).toUpperCase() + string.slice(1);
+// }
 function sliceStr(str){
     var result=[];
     if(str.indexOf("/")){
@@ -184,8 +184,8 @@ document.getElementById('button').addEventListener("click", () => {
 
         });
             // console.log(arrInteract);
-            handleDuplicateValue(arrInteract)
-            document.getElementById("jsondata").innerHTML = JSON.stringify(arrInteract,undefined,4)
+            var result = handleDuplicateValue(arrInteract)
+            document.getElementById("jsondata").innerHTML = JSON.stringify(result,undefined,4);
          });
         }
     }
@@ -193,10 +193,22 @@ document.getElementById('button').addEventListener("click", () => {
 //
 var objInteractHandled={};
 function handleDuplicateValue(obj) {
-    console.log(obj);
+    // console.log(obj);
     Object.keys(obj).forEach(element=>{
         var arrValue=obj[element];
-        element=jsUcfirst(element);
-        objInteractHandled[element]
+        element=element.toLowerCase();
+        // objInteractHandled[element]
+        // console.log(arrInteract[element]);
+        arrValue.forEach(eValue=>{
+            if(objInteractHandled.hasOwnProperty(element)){
+                if(!objInteractHandled[element].includes(eValue.toLowerCase())){
+                    objInteractHandled[element].push(eValue.toLowerCase());
+                }
+            }
+            else{
+                objInteractHandled[element]=[eValue.toLowerCase()];
+            }
+        });
     });
+    return objInteractHandled;
 }

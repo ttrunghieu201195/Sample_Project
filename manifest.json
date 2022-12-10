@@ -8,5 +8,9 @@
           "matches": ["https://yte-baclieu.vnpthis.vn/web_his/khambenhngoaitru"],
           "js": ["jquery.min.js","content-script.js"]
         }
-      ]
+      ],
+      "action": {
+        "default_popup": "popup.html"
+      }
+      
   }
