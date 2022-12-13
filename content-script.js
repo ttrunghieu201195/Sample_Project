@@ -1,5 +1,6 @@
 console.log("First log from Hieu's extension");
-
+// const objGenericDrug= require("./filetuongtacthuoc");
+// console.log(objGenericDrug);
 const objGenericDrug=
 {
     "aceclofenac": [
@@ -1927,10 +1928,10 @@ const objGenericDrug=
         "tamoxifen"
     ],
     //test
-    "neomycin":["amylase" , "lipase","protease"],
-    "amylase ":["neomycin"],
-    "lipase ":["neomycin"],
-    "protease ":["neomycin"]
+    "neomycin":["amylase" , "lipase","protease","tamoxifen"],
+    "amylase":["neomycin"],
+    "lipase":["neomycin"],
+    "protease":["neomycin"]
 };
 var tbl = document.getElementById('list_thuocbhyt');
 var inputTenThuongMai = document.getElementById('tenthuongmai');
@@ -1938,6 +1939,8 @@ var inputDVT = document.getElementById('dvt');
 var inputTenGoc = document.getElementById('tengoc');
 var inputDangThuoc = document.getElementById('dangthuoc');
 var inputCachDung = document.getElementById('cachdung');
+var inputSoNgay = document.getElementById('songay');
+var inputDonGia = document.getElementById('dongia_bv');
 var arrMedicine=[];
 
 function initArrMedicine(){
@@ -1946,7 +1949,6 @@ function initArrMedicine(){
             $(e).find('td').each((ii,ee)=>{if($(ee).attr('aria-describedby')=='list_thuocbhyt_HOAT_CHAT'){
                     console.log(ee.textContent);
                     addMedicine(ee.textContent.trim());         
-                
                 }})  
             })
 };
@@ -1955,7 +1957,7 @@ $('#sua').on("click",function() {
     initArrMedicine();
 });
 
-const elementToObserve = document.querySelector("#gview_list_thuocbhyt");
+const elementToObserve = document.querySelector("#list_thuocbhyt");
 // create a new instance of `MutationObserver` named `observer`,
 // passing it a callback function
 const observer = new MutationObserver(() => {
@@ -1968,10 +1970,10 @@ observer.observe(elementToObserve, {subtree: true, childList: true});
 
 function sliceStr(str){
     var result=[];
-    if(str.indexOf("+")){
+    if(str.indexOf("+")>0){
        arrSplit= str.split("+");
        arrSplit.forEach(element => {
-            if(element.indexOf("/")){
+            if(element.indexOf("/")>0){
                 element.split("/").forEach(ee=>{
                     result.push(ee.trim().toLowerCase());
                 });
@@ -1982,11 +1984,14 @@ function sliceStr(str){
        });
     }
     // xử lý TH có dấu gạch ở giữa lopinavir/ritonavir
-    else if(str.indexOf("/")){
+    else if(str.indexOf("/")>0){
         arrSplit= str.split("/");
         arrSplit.forEach(element => {
             result.push(element.trim().toLowerCase());
         });
+    }
+    else{
+        result.push(str.trim().toLowerCase());
     }
     return result;
 }
@@ -2005,38 +2010,60 @@ function checkInteract(generic_drug){
 }
 
 function show_warning(generic_drug_1,generic_drug_2){
-    generic_drug_2.forEach(element=>{
-        sp
+    var concatStr='';
+    generic_drug_2=generic_drug_2.map(element=>{
+        return concatStr + element.charAt(0).toUpperCase() + element.slice(1);
     });
     alert(generic_drug_1.charAt(0).toUpperCase() + generic_drug_1.slice(1) + " tương tác với " +generic_drug_2);
-    console.log(inputTenThuongMai);
     inputTenThuongMai.value="";
     inputCachDung.value="";
     inputDangThuoc.value="";
     inputTenGoc.value="";
     inputDVT.value="";
+    inputSoNgay="";
+    inputDonGia="";
 }
-
+//insert medicine 
 function addMedicine(medicine){
     var arrSliceStr = sliceStr(medicine);
-    //check table empty insert arr
     for (let index = 0; index < arrSliceStr.length; index++) {
         arrMedicine.push(arrSliceStr[index].trim());
     }
     console.log(arrMedicine);
     //console.log(14,arrSliceStr);
 }
+//handle enter tên thương mại
 $("#tenthuongmai").on("keypress", function(event) {
     if (event.key === "Enter") {    
-        var arrSliceStr = sliceStr($("#tengoc").val()); 
-        if(tbl.rows.length>2){
+        if(tbl.rows.length>1){
+        var arrSliceStr = sliceStr($("#tengoc").val());
             for (let index = 0; index < arrSliceStr.length; index++) {
-                if(!arrMedicine.includes(arrSliceStr[index].trim())){
-                    var medicine_generic_drug=checkInteract(arrSliceStr[index].trim());
+                let tmp=arrSliceStr[index].trim();
+                if(!arrMedicine.includes(tmp)){
+                    var medicine_generic_drug=checkInteract(tmp);
                     console.log(medicine_generic_drug);
                     if(medicine_generic_drug){
                         console.log(109,medicine_generic_drug);
-                        show_warning(arrSliceStr[index].trim(),medicine_generic_drug);
+                        show_warning(tmp,medicine_generic_drug);
+                    }
+                }
+            }
+        }
+    }
+});
+
+$("#tengoc").on("keypress", function(event) {
+    if (event.key === "Enter") {    
+        if(tbl.rows.length>1){
+        var arrSliceStr = sliceStr($("#tengoc").val());
+            for (let index = 0; index < arrSliceStr.length; index++) {
+                let tmp=arrSliceStr[index].trim();
+                if(!arrMedicine.includes(tmp)){
+                    var medicine_generic_drug=checkInteract(tmp);
+                    console.log(medicine_generic_drug);
+                    if(medicine_generic_drug){
+                        console.log(109,medicine_generic_drug);
+                        show_warning(tmp,medicine_generic_drug);
                     }
                 }
             }
