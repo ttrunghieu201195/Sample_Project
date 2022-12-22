@@ -1,5 +1,5 @@
 
-module.exports=
+const objGenericDrug=
 {
     "aceclofenac": [
         "ketorolac"
@@ -1924,5 +1924,7 @@ module.exports=
     ],
     "warfarin": [
         "tamoxifen"
-    ]
+    ],
+    //test
+    "Domperidon":["Spiramycin"]
 }
